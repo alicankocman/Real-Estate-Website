@@ -1,0 +1,134 @@
+.price {
+  text-align: center;
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.price .content {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.price .content .box {
+  width: 31.5%;
+  padding: 40px 30px;
+  border-radius: 15px;
+  background: #fff;
+  transition: all 0.3s ease;
+  position: relative;
+  border: 1px solid #eaeaea;
+}
+
+.price .content .box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.price .topbtn .btn3 {
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  background: #27ae60;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.price h3 {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #2d3436;
+}
+
+.price h1 {
+  font-size: 65px;
+  font-weight: 700;
+  color: #2d3436;
+  margin-bottom: 20px;
+}
+
+.price h1 span {
+  font-size: 30px;
+  font-weight: 500;
+  position: relative;
+  top: -25px;
+}
+
+.price ul {
+  margin: 40px 0;
+}
+
+.price ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #636e72;
+}
+
+.price label {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price .btn5 {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #27ae60;
+}
+
+.price .btn5:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Responsive Tasarım */
+@media screen and (max-width: 1024px) {
+  .price .content {
+    gap: 20px;
+  }
+  
+  .price .content .box {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .price .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .price .content .box {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .price {
+    padding: 50px 0;
+  }
+  
+  .price h1 {
+    font-size: 50px;
+  }
+  
+  .price h1 span {
+    font-size: 24px;
+    top: -15px;
+  }
+}
